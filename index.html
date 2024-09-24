@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Expense Calculator</title>
+
+    <!-- tailwind css and daisyUI cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200">
+    <main class="flex justify-center ">
+        <div class="w-[414px] h-auto bg-white mt-4 rounded-lg">
+            <h1 class="text-2xl font-bold text-center mt-4 text-purple-600">Programming Expense Assistance</h1>
+            <div class="flex gap-3 justify-center my-6">
+                <button class="btn btn-outline w-[40%]  text-white font-bold bg-gradient-to-l from-purple-600 to-blue-600 ">
+                    Assistance
+                </button>
+                <button class="btn btn-outline font-bold w-[40%] ">History</button>
+            </div>
+            <div class="mx-3">
+                <div>
+                    <p class="text-xl font-semibold">Income 💸</p>
+                    <input type="number" placeholder="Type Income" class="input input-bordered w-full max-w-md" />
+                </div>
+                <div class="my-3 flex gap-3">
+                     <div>
+                        <p class="text-xl font-semibold">Sortware 🖥️</p>
+                        <input type="number" placeholder="Software Cost" class="input input-bordered w-full max-w-md" />
+                     </div>
+                     <div>
+                        <p class="text-xl font-semibold">Courses 📕</p>
+                        <input type="number" placeholder="Courses Cost" class="input input-bordered w-full max-w-md" />
+                     </div>
+                </div>
+                <div>
+                    <p class="text-xl font-semibold">Internet 🌐</p>
+                    <input type="number" placeholder="Internet Cost" class="input input-bordered w-[48%] max-w-md" />
+                 </div>
+                 <button class="btn btn-outline w-full my-3  text-white font-bold bg-gradient-to-l
+                  from-purple-600 to-blue-600 text-lg">
+                    Calculate
+                </button>
+                <div>
+                    <p class="text-xl font-semibold">Savings(%)</p>
+                    <input type="number" placeholder="Savings %" class="input input-bordered w-full max-w-md" />
+                 </div>
+                 <button class="btn btn-outline w-full my-3  text-white font-bold bg-gradient-to-l
+                  from-green-600 to-cyan-600 text-lg">
+                    Calculate Savings
+                </button>
+
+                <!-- result section start here -->
+                <div class=" shadow-lg my-3 py-3 rounded-lg">
+                    <h2 class="text-2xl font-bold text-purple-500 text-center mb-3">😋 Results Summary</h2>
+                    <div>
+                        <div class="stats shadow my-3 mx-[10px] rounded-lg w-[45%] border-l-[6px] border-green-400">
+                            <div class="stat">
+                              <div class="stat-title">Total Expense</div>
+                              <div class="text-xl font-bold">89,400</div>
+                            </div>
+                        </div>
+                        <div class="stats shadow my-3 rounded-lg w-[45%] border-l-[6px] border-blue-400">
+                            <div class="stat">
+                              <div class="stat-title">Balance</div>
+                              <div class="text-xl font-bold">800</div>
+                            </div>
+                        </div>
+                        <div class="stats shadow mb-3 mx-[10px] rounded-lg w-[45%] border-l-[6px] border-purple-400">
+                            <div class="stat">
+                              <div class="stat-title">Savings Amount</div>
+                              <div class="text-xl font-bold">1400</div>
+                            </div>
+                        </div>
+                        <div class="stats shadow mb-3 rounded-lg w-[45%] border-l-[6px] border-lime-400">
+                            <div class="stat">
+                              <div class="stat-title">Remain Amount</div>
+                              <div class="text-xl font-bold">400</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
